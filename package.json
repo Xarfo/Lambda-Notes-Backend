@@ -6,5 +6,20 @@
   "repository": "https://github.com/Xarfo/Lambda-Notes-Backend.git",
   "author": "Abdul Ahmad",
   "license": "y",
-  "private": false
+  "private": false,
+  "scripts": {
+    "server": "nodemon index.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.4",
+    "express": "^4.16.4",
+    "helmet": "^3.14.0",
+    "knex": "^0.15.2",
+    "logger": "^0.0.1",
+    "morgan": "^1.9.1",
+    "sqlite3": "^4.0.3"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.5"
+  }
 }
