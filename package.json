@@ -1,0 +1,10 @@
+{
+  "name": "Lambda-Notes-Backend",
+  "version": "1.0.0",
+  "description": "\"Backend project for Lambda Notes\"",
+  "main": "index.js",
+  "repository": "https://github.com/Xarfo/Lambda-Notes-Backend.git",
+  "author": "Abdul Ahmad",
+  "license": "y",
+  "private": false
+}
