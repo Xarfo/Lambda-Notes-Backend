@@ -2,19 +2,19 @@ exports.up = function(knex, Promise) {
     return knex.schema.createTable("list", list => {
 
        list
-        .increments("id")
-        .primary();
+            .increments("id")
+            .primary();
         list
             .string("listName")
             .notNullable();
         list
-            .text("Description")
+            .text("description")
             .notNullable();
         list
-          .integer("user_id")
-          .notNullable()
-          .references("id")
-          .inTable("users");
+            .integer("user_id")
+            .notNullable()
+            .references("id")
+            .inTable("users");
     });
   };
   
