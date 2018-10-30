@@ -5,7 +5,7 @@ exports.up = function(knex, Promise) {
             .increments("id")
             .primary();
         list
-            .string("listName")
+            .string("list_name")
             .notNullable();
         list
             .text("description")
