@@ -15,6 +15,8 @@ exports.up = function(knex, Promise) {
             .notNullable()
             .references("id")
             .inTable("users");
+        list
+            .timestamps();  
     });
   };
   

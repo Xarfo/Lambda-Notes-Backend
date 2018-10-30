@@ -10,6 +10,8 @@ exports.up = function(knex, Promise) {
       notes
         .text("textBody")
         .notNullable();
+      notes
+        .timestamps();  
     });
   };
   
