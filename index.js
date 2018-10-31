@@ -68,6 +68,7 @@ server.post("/api/notes", (req, res) => {
 server.put("/api/notes/:id", (req, res) => {
   //Grab data from body
   const {id} = req.params;
+  const note_id = req.params
   const {title, textBody} = req.body;
   const updatedNote = {title, textBody};
 
@@ -76,7 +77,7 @@ server.put("/api/notes/:id", (req, res) => {
   console.log(updatedNote);
   //Update  data of the body
   db('notes')
-      .where({id})
+      .where(note_id)
           .update(updatedNote)
               .then(count => {
                   res.status(201).json(count);
